@@ -8,18 +8,25 @@ chmod +x caesar.py
 ```
 Then write something in a file and type:
 ```
-./caesar enc <yourfile> 
+./caesar.py enc <yourfile> 
 ```
 If you want, you can save the ciphred message into a file:
 ```
-./caesar enc <yourfile> > <anotherfile> 
+./caesar.py enc <yourfile> > <anotherfile> 
 ```
 So, if you want to decode such file, just:
 ```
-./caesar dec <anotherfile> 
+./caesar.py dec <anotherfile> 
 ```
+
+## Shift number
+You can choose the shift number with just:
+```
+./caesar.py -s <n> enc <yourfile>
+```
+
 ## Help
 You can get help with:
 ```
-./caesar -h
+./caesar.py -h
 ```
